@@ -32,8 +32,8 @@ const Blogs = ({ data, getBlogs }) => {
     };
     const response = await fetch(url, options);
     const data = await response.json();
-    getBlogs();
     alert(data.message);
+    getBlogs;
   };
 
   const onDeleteBlog = async (id) => {
