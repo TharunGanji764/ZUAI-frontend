@@ -33,12 +33,10 @@ const Blogs = ({ data, getBlogs }) => {
     const response = await fetch(url, options);
     const data = await response.json();
     getBlogs();
-    alert(data);
+    alert(data.message);
   };
 
-  const onDeleteBlog = async (e, id) => {
-    e.preventDefault();
-    e.stopPropagation();
+  const onDeleteBlog = async (id) => {
     const url = `https://zuai-backend-bn33.onrender.com/posts/${id}`;
     const options = {
       method: "DELETE",
@@ -48,7 +46,7 @@ const Blogs = ({ data, getBlogs }) => {
     };
     const response = await fetch(url, options);
     const data = await response.json();
-    alert(data);
+    alert(data.message);
   };
 
   return (
@@ -76,7 +74,11 @@ const Blogs = ({ data, getBlogs }) => {
             </button>
             <button
               className="btn btn-outline-danger"
-              onClick={() => onDeleteBlog(_id)}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                onDeleteBlog(_id);
+              }}
             >
               <MdDelete /> Delete Blog
             </button>
