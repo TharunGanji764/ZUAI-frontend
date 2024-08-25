@@ -189,7 +189,7 @@ const Home = () => {
       <div className="row">
         <ul className="container mt-5 blogs w-100 d-flex flex-column align-items-center">
           {blogs.map((each) => (
-            <Blogs key={each._id} data={each} />
+            <Blogs key={each._id} data={each} getBlogs={getBlogs} />
           ))}
         </ul>
       </div>

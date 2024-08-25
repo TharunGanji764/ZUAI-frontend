@@ -5,7 +5,7 @@ import Cookies from "js-cookie";
 import "./index.css";
 import { useState } from "react";
 
-const Blogs = ({ data }) => {
+const Blogs = ({ data, getBlogs }) => {
   const { _id, Title, Image, Author, Topic, Content } = data;
   const token = Cookies.get("jwt_token");
   const [blogData, setBlogData] = useState({
@@ -32,6 +32,7 @@ const Blogs = ({ data }) => {
     };
     const response = await fetch(url, options);
     const data = await response.json();
+    getBlogs();
     alert(data);
   };
 
