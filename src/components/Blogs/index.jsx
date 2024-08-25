@@ -32,10 +32,12 @@ const Blogs = ({ data }) => {
     };
     const response = await fetch(url, options);
     const data = await response.json();
-    console.log(data);
+    alert(data);
   };
 
-  const onDeleteBlog = async (id) => {
+  const onDeleteBlog = async (e, id) => {
+    e.preventDefault();
+    e.stopPropagation();
     const url = `https://zuai-backend-bn33.onrender.com/posts/${id}`;
     const options = {
       method: "DELETE",
@@ -45,7 +47,7 @@ const Blogs = ({ data }) => {
     };
     const response = await fetch(url, options);
     const data = await response.json();
-    console.log(data);
+    alert(data);
   };
 
   return (
