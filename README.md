@@ -1,70 +1,60 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here’s a sample README.md file for your project based on the provided package.json data. This README provides an overview of the project, setup instructions, usage, and other relevant information:
 
-## Available Scripts
+Frontend
+Overview
+This project is a React-based frontend application for managing blogs. It includes features for viewing, adding, editing, and deleting blog posts. It uses Redux for state management and React Router for navigation.
 
-In the project directory, you can run:
+Features
+--->User authentication (Login and Register)
+--->View a list of blog posts
+--->Add new blog posts
+--->Edit existing blog posts
+--->Delete blog posts
+--->Tech Stack
+--->React: A JavaScript library for building user interfaces
+--->React Router: For routing and navigation
+--->Redux: For state management
+--->Redux Thunk: Middleware for handling asynchronous actions
+--->React Icons: For icon support
+--->JS Cookies: For handling cookies
+--->Installation
+--->Clone the repository:
 
-### `npm start`
+bash
+git clone https://github.com/TharunGanji764/ZUAI-frontend.git
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+cd frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Install dependencies:
+npm install
 
-### `npm test`
+Scripts
+Start the development server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+pm start
 
-### `npm run build`
+This will start the development server and open the application in your default browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Configuration
+The application uses js-cookie to manage cookies. The JWT token for authentication is stored in cookies under the key jwt_token.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dependencies
+@testing-library/jest-dom: Provides custom matchers for testing DOM nodes
+@testing-library/react: Testing utilities for React
+@testing-library/user-event: Utilities for simulating user events
+react-icons: A library for including icons in React
+react-redux: Official React bindings for Redux
+react-router-dom: Declarative routing for React.js
+redux: Predictable state container for JavaScript apps
+redux-thunk: Middleware for handling asynchronous actions
+Usage
+After running the development server, you can access the application at http://localhost:3000. You will be able to:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Login/Register: Access the login or registration pages if not authenticated.
+View Blogs: See a list of all blogs.
+Add Blog: Use the modal to add a new blog post.
+Edit Blog: Open a modal to edit the details of an existing blog post.
+Delete Blog: Remove a blog post from the list.
