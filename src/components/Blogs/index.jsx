@@ -33,7 +33,7 @@ const Blogs = ({ data, getBlogs }) => {
     const response = await fetch(url, options);
     const data = await response.json();
     alert(data.message);
-    getBlogs;
+    getBlogs();
   };
 
   const onDeleteBlog = async (id) => {
@@ -46,6 +46,7 @@ const Blogs = ({ data, getBlogs }) => {
     };
     const response = await fetch(url, options);
     const data = await response.json();
+    getBlogs();
     alert(data.message);
   };
 
