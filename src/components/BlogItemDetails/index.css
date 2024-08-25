@@ -1,0 +1,33 @@
+.blog-info {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.blog-image {
+  transform: translateX(50%);
+  width: 50%;
+  height: 350px;
+  object-fit: fill;
+  border-radius: 18px;
+}
+.blog-details-title {
+  align-self: center;
+  font-size: 42px;
+  font-weight: 600;
+}
+.details-author-name {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.blog-info-card {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+.blog-content {
+  font-size: 24px;
+  margin: 15px;
+}

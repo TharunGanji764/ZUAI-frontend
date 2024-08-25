@@ -1,0 +1,51 @@
+/* Write your CSS code here */
+.item-link {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+}
+.image {
+  width: 350px;
+  height: 200px;
+  margin-right: 20px;
+}
+.avatar {
+  width: 30px;
+  border-radius: 50px;
+}
+.blog-card {
+  width: 50%;
+  border: 1px solid #8e8e8e;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  margin-bottom: 18px;
+}
+.blog-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.blog-topic {
+  color: #d3d3d3;
+  font-size: 18px;
+  font-weight: 500;
+}
+.blog-title {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+}
+.author-details {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  margin-right: 10px;
+}
+.author-name {
+  color: #8e8e8e;
+}
